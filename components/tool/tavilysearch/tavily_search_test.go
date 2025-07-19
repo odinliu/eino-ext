@@ -82,6 +82,10 @@ func TestTavilySearchTool(t *testing.T) {
 	  "query": {
 		"description": "The search query to execute with Tavily.",
 		"type": "string"
+	  },
+	  "topic": {
+		"description": "The category of the search. general or news.",
+		"type": "string"
 	  }
 	},
 	"required": [

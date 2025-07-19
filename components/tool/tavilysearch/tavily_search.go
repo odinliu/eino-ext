@@ -181,7 +181,7 @@ func NewTool(ctx context.Context, config *Config) (tool.InvokableTool, error) {
 
 type SearchRequest struct {
 	Query string `json:"query" jsonschema:"description=The search query to execute with Tavily."`
-	Topic string `json:"topic,omitempty" jsonschema:"description=The category of the search. Available options: general, news, default:general"`
+	Topic string `json:"topic,omitempty" jsonschema:"description=The category of the search. general or news."`
 }
 
 type SearchResult struct {
